@@ -1,0 +1,10 @@
+<h3><edit-in-place value = "date.name"></edit-in-place></h3>
+<h4>Получатели подарков</h4>
+<ul class="list-group">
+    <li ng-repeat="personId in date.persons" class="list-group-item"><a href="#date/{{date.id}}/person/{{personId}}">{{personNameById(personId)}}</a></li>
+</ul>
+<div class="form-group" ng-show="editPerson">
+	<label for="plusPerson">Введите имя нового получателя подарков</label>
+	<input type="data" class="form-control" id="plusPerson" placeholder="Иванов Иван"/>
+</div>
+<a class="btn btn-success" href="#/" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Назад</a> <button class="btn btn-primary" type="button" ng-click="editPerson = !editPerson"><span class="glyphicon glyphicon-plus" ng-hide="editPerson"></span><span class="glyphicon glyphicon-ok" ng-show="editPerson"></span> Добавить</button> 

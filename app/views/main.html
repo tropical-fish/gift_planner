@@ -1,0 +1,11 @@
+
+    <h2>Мои праздники</h2>
+    <ul class="list-group">
+        <li ng-repeat="date in dates" class="list-group-item"><a href="#/date/{{date.id}}">{{date.name}}</a></li>
+    </ul>
+    <div class="form-group" ng-show="editDate">
+	    <label for="plusDate">Введите название нового праздника</label>
+	    <input type="data" class="form-control" id="plusDate" placeholder="Пасха"/>
+  	</div>
+    <button class="btn btn-primary" type="button" ng-click="editDate = !editDate"><span class="glyphicon glyphicon-plus" ng-hide="editDate"></span><span class="glyphicon glyphicon-ok" ng-show="editDate"></span> Добавить</button> 
+

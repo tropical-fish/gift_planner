@@ -1,0 +1,10 @@
+<h2>{{date.name}}</h2>
+<h3><edit-in-place value = "person.name"></edit-in-place></h3>
+<ul class="list-group">
+  <li ng-repeat="present in presents | filter:filterBy" class="list-group-item"><a href="#/present/{{present.id}}">{{present.name}}</a></li>
+</ul>
+<div class="form-group" ng-show="editPresent">
+	<label for="plusPresent">Введите название нового подарка</label>
+	<input type="data" class="form-control" id="plusPresent" placeholder="Наушники"/>
+</div>
+<a class="btn btn-success" href="#/date/{{date.id}}" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Назад</a> <button class="btn btn-primary" type="button" ng-click="editPresent = !editPresent"><span class="glyphicon glyphicon-plus" ng-hide="editPresent"></span><span class="glyphicon glyphicon-ok" ng-show="editPresent"></span> Добавить</button> 
