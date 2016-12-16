@@ -1,7 +1,7 @@
-<h3><edit-in-place value = "date.name"></edit-in-place></h3>
-<h4>Получатели подарков</h4>
+<h3 class="text-center"><edit-in-place value = "date.name"></edit-in-place></h3>
+<h4 class="text-center">Получатели подарков</h4>
 <ul class="list-group">
-    <li ng-repeat="personId in date.persons" class="list-group-item"><a href="#date/{{date.id}}/person/{{personId}}">{{personNameById(personId)}}</a></li>
+    <li ng-repeat="personId in date.persons" class="list-group-item"><a href="#date/{{date.id}}/person/{{personId}}"><img ng-src="{{personImgById(personId)}}"/>    {{personNameById(personId)}}</a></li>
 </ul>
 <div class="form-group" ng-show="editPerson">
 	<label for="plusPerson">Введите имя нового получателя подарков</label>

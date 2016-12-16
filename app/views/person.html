@@ -1,7 +1,7 @@
-<h2>{{date.name}}</h2>
-<h3><edit-in-place value = "person.name"></edit-in-place></h3>
+<h3 class="text-center">{{date.name}}</h3>
+<h4 class="text-center"><edit-in-place value = "person.name"></edit-in-place></h4>
 <ul class="list-group">
-  <li ng-repeat="present in presents | filter:filterBy" class="list-group-item"><a href="#/present/{{present.id}}">{{present.name}}</a></li>
+  <li ng-repeat="present in presents | filter:filterBy" class="list-group-item">{{present.name}} <img ng-src="{{present.img}}"/>{{present.price}} руб</li>
 </ul>
 <div class="form-group" ng-show="editPresent">
 	<label for="plusPresent">Введите название нового подарка</label>

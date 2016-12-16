@@ -11,7 +11,7 @@ angular.module('editInPlaceDirective',[])
 		          $scope.editing = false;
 		        } else {
 		          $scope.editing = true; 
-		          inputElement[0].focus();
+		          //inputElement[0].focus();
 	        	}
 	      	  };
 	    	}

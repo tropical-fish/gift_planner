@@ -22,6 +22,14 @@ angular.module("dateService", ['myApp.factories'])
 			        return persons[i].name;
 			    }
 			}
+		};
+
+		$scope.personImgById = function(personId){
+			for(var i=0; i < persons.length; i++) {
+				if(persons[i].id == personId) {
+			        return persons[i].img;
+			    }
+			}
 		}
 
   	});

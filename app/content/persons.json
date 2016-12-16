@@ -1,18 +1,22 @@
 [
 	{
 	  "id":1,
-	  "name":"Мама"
+	  "name":"Мама",
+	  "img":"images/id1.jpg"
 	},
 	{
 	  "id":2,
-	  "name":"Папа"
+	  "name":"Папа",
+	  "img":"images/id2.jpg"
 	},
 	{
 	  "id":3,
-	  "name":"Сын"
+	  "name":"Сын",
+	  "img":"images/id3.png"
 	},
 	{
 	  "id":4,
-	  "name":"Сестра"
+	  "name":"Сестра",
+	  "img":"images/id4.jpg"
 	}
 ]
